@@ -1,43 +1,47 @@
 //
 //	main.cpp
-//	Jogo
+//	Game
 //
 //	Created by Lucas Nathaniel on 15/10/16;
 //	Copyright (c) 2016 Lucas Nathaniel. All rights reserved.
 //
 
 #include <iostream>
-#include "Jogo.h"
-#include "Jogadores.h"
+#include "Game.h"
+#include "Players.h"
 #include "stdlib.h"
 
 using namespace std;
 
 int main(){
 	system("clear");
-	cout << "\tBem vindo ao DiceGame -0.01" << endl;
+	cout << "        Welcome to the DiceGame -0.02" << endl;
 	cout << "----------------------------------------------" << endl;
-	cout << "Quantos jogadores desejam participar?" << endl;
+	cout << "How many players will to play?" << endl;
 	int players;
 	cin >> players;
 	if(players <= 0){
-		cout << "Nenhum jogador quis participar" << endl;
+		cout << "Nobody wants play" << endl;
 		return 0;
 	}
 	if(players == 1){
-		cout << "Não seja forever alone" << endl;
+		cout << "Dont be a Forever Alone" << endl;
 		return 0;
 	}
-	Jogo* jogo = new Jogo();
+	Game* game = new Game();
 	for(int i=1; i<=players; i++){
-		jogo->inserir(0);
+		game->Insert(0);
 	}
-	cout << "Qual o número limite determinado pelos jogadores?" << endl;
-	int limite;
-	cin >> limite;
-	jogo->setLimite(limite);
+	cout << "Which the max number?" << endl;
+	int Limit;
+	cin >> Limit;
+	if(Limit <= 0){
+		cout << "Nobody wants play" << endl;
+		return 0;
+	}
+	game->setLimit(Limit);
 	cout << "==============================================" << endl;
-	cout << "\t      O jogo começou!" << endl;
-	jogo->Jogando();
+	cout << "              Game started!" << endl;
+	game->Playing();
 	return 0;
 }
