@@ -2,8 +2,8 @@
 //	Players.cpp
 //	Game
 //
-//	Created by Lucas Nathaniel on 15/10/16;
-//	Copyright (c) 2016 Lucas Nathaniel. All rights reserved.
+//	Created by Kali Nathalie on 15/10/16;
+//	Copyright (c) 2016 Kali Nathalie. All rights reserved.
 //
 #include "Players.h"
 

@@ -2,8 +2,8 @@
 //	Players.h
 //	Game
 //
-//	Created by Lucas Nathaniel on 15/10/16;
-//	Copyright (c) 2016 Lucas Nathaniel. All rights reserved.
+//	Created by Kali Nathalie on 15/10/16;
+//	Copyright (c) 2016 Kali Nathalie. All rights reserved.
 //
 #ifndef __Game__Players__
 #define __Game__Players__
